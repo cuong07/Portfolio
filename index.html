@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                }
+            },
+        }
+    </script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="flex flex-col w-screen bg-[#fefcfe] items-center relative"
+        style="background: linear-gradient(90deg, #f5f7fa 0%, #c3cfe2 100%)">
+        <header class="left-0 right-0 h-16 shadow-md bg-white flex justify-around items-center fixed z-20"
+            style="background: linear-gradient(90deg, #f5f7fa 0%, #c3cfe2 100%)">
+            <h2 class="text-xl logo">M.Cuong</h2>
+            <nav class="">
+                <i class="fa-solid fa-bars nav-menu--icon md:hidden text-2xl"></i>
+                <ul
+                    class="md:flex hidden menu max-md:absolute md:w-full md:h-full w-screen h-screen left-0 top-0 max-md:flex-col justify-center items-center max-md:gap-4 max-md:bg-">
+                    <li class="px-4 hover:text-[#333] font-medium text-[#00000070] cursor-pointer">
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="px-4 hover:text-[#333] font-medium text-[#00000070] cursor-pointer">
+                        <a href="#skill">
+                            Skills
+                        </a>
+                    </li>
+                    <li class="px-4 hover:text-[#333] font-medium text-[#00000070] cursor-pointer">
+                        <a href="#qualification">
+                            Qualification
+                        </a>
+                    </li>
+                    <li class="px-4 hover:text-[#333] font-medium text-[#00000070] cursor-pointer">
+                        <a href="#projects">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="px-4 hover:text-[#333] font-medium text-[#00000070] cursor-pointer">
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <hr id="home" class="w-4/5 border-black">
+        <section class="w-full flex flex-col items-center gap-20 my-20 ">
+            <div class="flex justify-center">
+                <p class="text-4xl flex flex-col gap-4">
+                    <span class="glitch-wrapper">
+                        Hi, I'm
+                        <span class="glitch" data-glitch="Mạnh Cường">Mạnh Cường</span>
+                    </span>
+                    Frontend Developer.
+                </p>
+            </div>
+            <div class="flex md:w-3/5 w-5/6 justify-center gap-4 ">
+                <div class="flex-1 flex-col gap-16 flex">
+                    <div class="flex-col gap-1 flex">
+                        <p class="uppercase font-semibold">biography</p>
+                        <figure class="">
+                            Hi. I'm Mạnh Cường,<br> Frontend Developer
+                        </figure>
+                    </div>
+                    <div class="flex-col gap-1 flex">
+                        <p class="uppercase font-semibold ">Contact</p>
+                        <figure>
+                            Ho Chi Minh City,<br>
+                            front.cuong@gmail.com <br>
+                            +84327427732
+                        </figure>
+                    </div>
+                    <div class="flex-col gap-1 flex">
+                        <p class="uppercase font-semibold ">Contact</p>
+                        <span class="flex gap-3 ">
+                            <a href="https://github.com/cuong07"><i class="fa-brands fa-github text-2xl"
+                                    title="github"></i></a>
+                            <a href="https://www.facebook.com/manhcuong.apk/"><i class="fa-brands fa-facebook text-2xl"
+                                    title="facebook"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="flex-1 max-md:hidden">
+                    <div class="w-full overflow-hidden rounded-full border-2 border-black ">
+                        <img src="./assets/img/avatar.jpg" alt="avatar"
+                            class="p-3 rounded-full hover:scale-110 duration-300">
+                    </div>
+                </div>
+                <div class="flex-1 flex-col gap-16 flex items-end">
+                    <div class="flex-col gap-1 flex">
+                        <p class="uppercase  font-semibold">years of experience</p>
+                        <figure class="text-right mr-4 text-2xl font-bold">
+                            0
+                        </figure>
+                    </div>
+                    <div class="flex-col gap-1 flex">
+                        <p class="uppercase  font-semibold">Complete Projects</p>
+                        <figure class="text-right mr-4 text-2xl font-bold">
+                            07+
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr id="skill" class="w-4/5 border-black">
+        <section class="w-full flex flex-col items-center gap-10 my-20">
+            <div class="text-center flex flex-col gap-4">
+                <h2 class="font-bold text-3xl">Skills</h2>
+                <span class="text-[#00000080]">My favorite skills</span>
+            </div>
+            <div class="md:w-3/5 w-5/6 flex md:gap-20 gp-2">
+                <div class="flex-1 flex flex-col items-center gap-6">
+                    <h3 class="md:text-xl font-semibold"> <i class="fa-solid fa-code"></i> Frontend</h3>
+                    <div class="flex flex-wrap md:gap-10 gap-4 justify-center">
+                        <span
+                            class="flex hover:animate-bounce skills flex-col md:w-28 w-2/5 gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg ">
+                            <img src="./assets/skill-icons/html-1.svg" alt="" class="md:w-10 w-8 duration-300">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">HTML</p>
+                                <p class="text-sm text-[#00000080] ">Intermediate</p>
+                            </span>
+                        </span>
+                        <span
+                            class="flex hover:animate-bounce skills flex-col md:w-28 w-2/5 gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg">
+                            <img src="./assets/skill-icons/css-3.svg" alt="" class="md:w-10 w-8 duration-300">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">CSS</p>
+                                <p class="text-sm text-[#00000080] ">Advanced</p>
+                            </span>
+                        </span>
+                        <span
+                            class="flex hover:animate-bounce skills flex-col md:w-28 w-2/5  gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg">
+                            <img src="./assets/skill-icons/javascript-1.svg" alt="" class="md:w-10 w-8 duration-300">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">JAVASCRIPT</p>
+                                <p class="text-sm text-[#00000080] ">Intermediate</p>
+                            </span>
+                        </span>
+                        <span
+                            class="flex hover:animate-bounce skills flex-col md:w-28 w-2/5  gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg">
+                            <img src="./assets/skill-icons/react-2.svg" alt="" class="md:w-10 w-8 duration-300">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">REACTJS</p>
+                                <p class="text-sm text-[#00000080] ">Intermediate</p>
+                            </span>
+                        </span>
+                        <span
+                            class="flex hover:animate-bounce skills flex-col md:w-28 w-2/5  gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg">
+                            <img src="./assets/skill-icons/redux.svg" alt="" class="md:w-10 w-8 duration-300">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">REDUX</p>
+                                <p class="text-sm text-[#00000080] ">Intermediate</p>
+                            </span>
+                        </span>
+                        <span
+                            class="flex hover:animate-bounce skills flex-col md:w-28 w-2/5  gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg">
+                            <img src="./assets/skill-icons/eslint-1.svg" alt="" class="md:w-10 w-8 duration-300">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">ESLINT</p>
+                                <p class="text-sm text-[#00000080] ">Basic</p>
+                            </span>
+                        </span>
+                        <span
+                            class="flex hover:animate-bounce skills flex-col md:w-28 w-2/5  gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg">
+                            <img src="./assets/skill-icons/sass-1.svg" alt="" class="md:w-10 w-8 duration-300">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">SASS</p>
+                                <p class="text-sm text-[#00000080] ">Intermediate</p>
+                            </span>
+                        </span>
+                        <span
+                            class="flex hover:animate-bounce skills flex-col md:w-28 w-2/5  gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg">
+                            <img src="./assets/skill-icons/tailwind-css-2.svg" alt="" class="md:w-10 w-8 duration-300">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">TAILWIND</p>
+                                <p class="text-sm text-[#00000080] ">Advanced</p>
+                            </span>
+                        </span>
+
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col items-center gap-6">
+                    <h3 class="text-xl font-semibold"> <i class="fa-solid fa-database"></i> Backend</h3>
+                    <div class="flex flex-wrap md:gap-10 gap-4 justify-center">
+                        <span
+                            class="flex hover:animate-bounce skills flex-col md:w-28 w-2/5  gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg">
+                            <img src="./assets/skill-icons/nodejs-1.svg" alt="" class="md:w-10 w-8 duration-300">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">NODEJS</p>
+                                <p class="text-sm text-[#00000080] ">basic</p>
+                            </span>
+                        </span>
+                        <span
+                            class="flex hover:animate-bounce skills flex-col md:w-28 w-2/5  gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg">
+                            <img src="./assets/skill-icons/express-109.svg" alt="" class="md:w-10 w-8 duration-300">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">EXPRESS</p>
+                                <p class="text-sm text-[#00000080] ">basic</p>
+                            </span>
+                        </span>
+                        <span
+                            class="flex hover:animate-bounce skills flex-col md:w-28 w-2/5  gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg">
+                            <img src="./assets/skill-icons/sequelize.svg" alt="" class="md:w-10 w-8 duration-300">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">ESLINT</p>
+                                <p class="text-sm text-[#00000080] ">Basic</p>
+                            </span>
+                        </span>
+                        <span
+                            class="flex flex-col hover:animate-bounce skills md:w-28 w-2/5  gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg">
+                            <img src="./assets/skill-icons/jwt-3.svg" alt="" class=" w-10 md:w-10 w-8">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">JWT</p>
+                                <p class="text-sm text-[#00000080] ">Basic</p>
+                            </span>
+                        </span>
+                        <span
+                            class="flex hover:animate-bounce skills flex-col md:w-28 w-2/5  gap-2 cursor-pointer md:h-30 h-26 p-4 rounded-[40px] bg-[#f2f1f2] items-center justify-around shadow-lg">
+                            <img src="./assets/skill-icons/mysql-6.svg" alt="" class="w-10 duration-300">
+                            <span class="flex flex-col items-center">
+                                <p class="font-semibold text-black">MYSQL</p>
+                                <p class="text-sm text-[#00000080] ">Basic</p>
+                            </span>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="w-4/5 border-black" id="qualification">
+        <section class="w-full flex flex-col items-center gap-10 my-20">
+            <div class="text-center">
+                <h2 class="font-bold text-3xl">Qualification</h2>
+            </div>
+            <div class="flex flex-col gap-6 text-center">
+                <div class="text-xl font-semibold"><i class="fa-solid fa-user-graduate mr-4"></i>Education</div>
+                <div class="flex flex-col gap-4 ">
+                    <span class="flex flex-col gap-3">
+                        <p class="text-2xl font-semibold">University</p>
+                        <li class="text-[#00000080]">The second-year student <br> information technology at Hung Vuong
+                            University <br> in Ho
+                            Chi Minh City.</li>
+                        <li class="text-[#00000080]">2021-2025</li>
+                    </span>
+                    <span class="flex flex-col gap-3">
+                        <p class="text-2xl font-semibold">Udemy Cuourse</p>
+                        <li class="text-[#00000080]">React - The Complete Guide</li>
+                        <li class="text-[#00000080]">
+                            <a class="underline" target="_blank"
+                                href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-0039586e-fcf7-4c42-8f6a-03dcea90339a.pdf">
+                                My certificate
+                            </a>
+                        </li>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <hr class="w-4/5 border-black" id="projects">
+        <section class="w-full flex flex-col items-center gap-10 flex-col my-20">
+            <div class="text-center flex flex-col gap-4">
+                <h2 class="font-bold text-3xl">Projects</h2>
+                <span class="text-[#00000080]">Featured projects</span>
+            </div>
+            <div class="md:w-3/5 w-5/6 flex flex-col gap-8 ">
+                <div class="md:flex max-md:flex-col gap-6">
+                    <div class="md:w-2/5 w-full overflow-hidden border-2 border-black shadow-lg"
+                        style="border-radius: 40% 7% 43% 9% / 70% 18% 65% 13%;">
+                        <img src="./assets/img/shop.png" alt="shop"
+                            class="w-full p-2 scale-110 hover:scale-125 duration-300">
+                    </div>
+                    <div class="flex flex-col gap-2 relative">
+                        <p class="font-semibold text-xl">Web sell clothes (frontend)</p>
+                        <p class="">Reactjs, Redux, Redux-toolkit, Tailwind, Axios...</p>
+                        <a href="https://github.com/cuong07/my-store-frontend" target="_blank"
+                            class="font-semibold">Github:
+                            https://github.com/cuong07/my-store-frontend</a>
+                        <a href="https://my-store-frontend-xi.vercel.app" class="font-semibold">
+                            Live demo: https://my-store-frontend-xi.vercel.app
+                        </a>
+                        <figure>
+                            Feature: Add to Cart, Purchase/Order, Manage Orders,<br> Login/Sign in, Admin,
+                            Authenticate, Authorization...
+                        </figure>
+                    </div>
+                </div>
+                <div class="md:flex max-md:flex-col gap-6">
+                    <div class="md:w-2/5 w-full overflow-hidden border-2 border-black shadow-lg"
+                        style="border-radius: 40% 7% 43% 9% / 70% 18% 65% 13%;">
+                        <img src="./assets/img/zingmp3.png" alt="shop"
+                            class="w-full p-2 scale-110 hover:scale-125 duration-300">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="font-semibold text-xl">Zingmp3 Clone</p>
+                        <p class="">Reactjs, Redux, Redux-toolkit, Tailwind, Axios...</p>
+                        <a href="https://github.com/cuong07/zingmp3-clone" target="_blank" class="font-semibold">Github:
+                            https://github.com/cuong07/zingmp3-clone</a>
+                        <a href="https://zingmp3-clone-by-cuong.vercel.app" class="font-semibold">
+                            Live demo: https://zingmp3-clone-by-cuong.vercel.app
+                        </a>
+                        <figure>
+                            Feature: Search and Play Music, Playlist, Albums...
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="md:flex max-md:flex-col gap-6">
+                    <div class="md:w-2/5 w-full overflow-hidden border-2 border-black shadow-lg"
+                        style="border-radius: 40% 7% 43% 9% / 70% 18% 65% 13%;">
+                        <img src="./assets/img/shop.png" alt="shop"
+                            class="w-full p-2 scale-110 hover:scale-125 duration-300">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="font-semibold text-xl">Web sell clothes (backend)</p>
+                        <p class="">ExpressJs, NodeJs, JWT, Mysql, Sequelize...</p>
+                        <a href="https://github.com/cuong07/my-store-backend" target="_blank"
+                            class="font-semibold">Github:
+                            https://github.com/cuong07/my-store-backend
+                        </a>
+                        <figure>
+                            Feature: Add to Cart, Purchase/Order, JWT, Msql, Sequelize,<br> Manage Orders, Login/Sign
+                            Authenticate, Authorization...
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr class="w-4/5 border-black" id="contact">
+        <section class="w-full flex flex-col items-center gap-10 flex-col my-20">
+            <div class="text-center flex flex-col gap-4">
+                <h2 class="font-bold text-4xl">Contact Me</h2>
+                <span class="text-[#00000080]">Get in touch</span>
+            </div>
+            <div class="flex flex-col gap-3">
+                <a href="mailto:front.cuong@gmail.com"> <strong>Email:</strong> front.cuong@gmail.com</a>
+                <a href="tel:+84327427732"><strong>Tel:</strong> 0327427732</a>
+                <p><strong>Zalo:</strong> 0327427732</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
